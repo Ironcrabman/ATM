@@ -41,7 +41,7 @@ public class MailingAddress {
         if(secondaryStreet == null){
             return (primaryStreet + "\n" + city + ", " + state + postalCode);
         }else {
-            return (primaryStreet + "\n" + secondaryStreet + "\n" + city + ", " + state + postalCode);
+            return (primaryStreet + "\n" + secondaryStreet + "\n" + city + ", " + state + " " + postalCode);
         }
     }
 
