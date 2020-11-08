@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 public class BankAccount {
 
     private double balance;
@@ -13,6 +15,10 @@ public class BankAccount {
 
     public AccountOwner getAccountOwner(){
         return(accountOwner);
+    }
+
+    public void setAccountOwner(AccountOwner accountOwner){
+        this.accountOwner = accountOwner;
     }
 
     public String getMaskedAccountNumber(){
@@ -68,5 +74,6 @@ public class BankAccount {
     private long generateAccountNumber() {
         return(counter++);
     }
+
 
 }
